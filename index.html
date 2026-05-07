@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caribbean Swissness • 27 Juin 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+  <!-- HERO -->
+  <section class="min-h-screen bg-black flex items-center justify-center text-center px-6 py-20">
+    <div class="max-w-4xl">
+      <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-wider">CARIBBEAN<br><span class="text-amber-400">SWISSNESS</span></h1>
+      <p class="text-2xl md:text-3xl mb-8 text-amber-300">Glamour Night • Aéroport de Genève</p>
+      
+      <div id="countdown" class="countdown flex justify-center gap-8 mb-10 text-amber-400 text-5xl"></div>
+      
+      <a href="#billetterie" 
+         class="inline-block bg-amber-400 hover:bg-amber-500 text-zinc-950 font-bold text-xl px-12 py-6 rounded-full transition-all">
+        BILLETTERIE - 119 CHF
+      </a>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section class="py-20 bg-zinc-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-amber-400">Infos Pratiques</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div>
+          <i class="fas fa-calendar-alt text-5xl text-amber-400 mb-4"></i>
+          <p class="text-xl">27 Juin 2026</p>
+          <p class="text-2xl font-semibold">19h00 → Minuit</p>
+        </div>
+        <div>
+          <i class="fas fa-map-marker-alt text-5xl text-amber-400 mb-4"></i>
+          <p class="text-xl">Aéroport de Genève</p>
+          <p class="text-2xl font-semibold">Restaurant Le Chef</p>
+        </div>
+        <div>
+          <i class="fas fa-gem text-5xl text-amber-400 mb-4"></i>
+          <p class="text-xl">Dress Code</p>
+          <p class="text-2xl font-semibold">Tenue de Soirée</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-amber-400">Ambiance de la soirée</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <img src="https://i.imgur.com/NZOEXyl.jpeg" class="rounded-3xl shadow-2xl" alt="">
+        <img src="https://i.imgur.com/Yw6RuBe.jpeg" class="rounded-3xl shadow-2xl" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="billetterie" class="py-20 bg-zinc-900 text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Tarif d’entrée</h2>
+      <p class="text-6xl font-bold text-amber-400 mb-4">119 CHF</p>
+      <p class="text-xl mb-10">
+        Cocktail de bienvenue + <strong>Buffet complet</strong> (entrée, plat, dessert) + 
+        Animation DJ + Surprises tout au long de la soirée
+      </p>
+      
+      <button onclick="alert('Billetterie bientôt disponible !\n\nRéservez par WhatsApp :\n+33 6 35 71 34 43')"
+              class="bg-amber-400 text-zinc-950 font-bold text-2xl px-16 py-7 rounded-full hover:scale-105 transition">
+        JE RÉSERVE MA PLACE
+      </button>
+      <p class="text-sm text-gray-400 mt-8">Événement limité à 100 personnes</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-950 py-12 text-center">
+    <p class="text-xl">Caribbean Swissness 2026 ©</p>
+    <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
+  </footer>
+
+  <script>
+    function countdown() {
+      const eventDate = new Date("2026-06-27T19:00:00").getTime();
+      const distance = eventDate - Date.now();
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      
+      document.getElementById("countdown").innerHTML = `
+        <div>${days}<span class="text-base font-normal block text-amber-300">JOURS</span></div>
+        <div>${hours}<span class="text-base font-normal block text-amber-300">HEURES</span></div>
+        <div>${minutes}<span class="text-base font-normal block text-amber-300">MIN</span></div>
+      `;
+    }
+    setInterval(countdown, 60000);
+    countdown();
+  </script>
+</body>
+</html>
