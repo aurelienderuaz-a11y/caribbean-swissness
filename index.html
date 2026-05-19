@@ -17,7 +17,6 @@
           <span class="bg-gradient-to-r from-[#8B00FF] via-[#A020F0] to-[#FFD700] bg-clip-text text-transparent">CARIBBEAN</span>
           <span class="text-red-500">SWISS</span><span class="text-white">NESS</span>
         </h1>
-
         <div class="flex gap-x-7 md:gap-x-10 text-base md:text-lg font-medium">
           <a href="index.html" class="text-[#FFD700] hover:text-amber-300 transition">Accueil</a>
           <a href="formation.html" class="hover:text-[#FFD700] transition">Formation Terahertz</a>
@@ -120,4 +119,38 @@
   <!-- NOS ANCIENS ÉVÉNEMENTS -->
   <section class="py-16 md:py-20 bg-[#004D40]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#FFD700]">Nos Anciens Événements</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <img src="https://i.imgur.com/wALNMSD.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 1">
+        <img src="https://i.imgur.com/no48kWz.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 2">
+        <img src="https://i.imgur.com/ge6KIOO.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 3">
+        <img src="https://i.imgur.com/0drCQd1.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-12 text-center">
+    <p class="text-xl">Caribbean Swissness 2026 ©</p>
+    <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
+  </footer>
+
+  <script>
+    function countdown() {
+      const eventDate = new Date("2026-06-27T19:00:00").getTime();
+      const distance = eventDate - Date.now();
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      
+      document.getElementById("countdown").innerHTML = `
+        <div>${days}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">JOURS</span></div>
+        <div>${hours}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">HEURES</span></div>
+        <div>${minutes}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">MIN</span></div>
+      `;
+    }
+    setInterval(countdown, 60000);
+    countdown();
+  </script>
+</body>
+</html>
