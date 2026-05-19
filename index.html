@@ -8,48 +8,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .accent { color: #00E6C7; } /* Turquoise principal */
   </style>
 </head>
-<body class="bg-zinc-950 text-white">
+<body class="bg-[#0A1F1C] text-white">
 
   <!-- Navigation -->
-  <nav class="bg-black sticky top-0 z-50 border-b border-amber-900">
+  <nav class="bg-black/90 backdrop-blur sticky top-0 z-50 border-b border-[#00E6C7]/30">
     <div class="max-w-6xl mx-auto px-6 py-5">
       <div class="flex justify-between items-center">
-        <!-- Logo visible seulement sur desktop -->
-        <h1 class="text-xl font-bold text-amber-400 hidden md:block">
-          CARIBBEAN SWISSNESS
-        </h1>
-
-        <!-- Menu -->
-        <div class="flex w-full justify-around md:w-auto md:justify-end gap-x-8 md:gap-x-12 text-base md:text-lg font-medium">
-          <a href="index.html" class="hover:text-amber-400 transition">Accueil</a>
-          <a href="formation.html" class="hover:text-amber-400 transition">Formation Terahertz</a>
-          <a href="association.html" class="hover:text-amber-400 transition">Notre Association</a>
+        <h1 class="text-xl font-bold text-[#FFD700]">CARIBBEAN SWISSNESS</h1>
+        
+        <div class="flex gap-x-8 text-base font-medium">
+          <a href="index.html" class="hover:text-[#00E6C7] transition">Accueil</a>
+          <a href="formation.html" class="hover:text-[#00E6C7] transition">Formation Terahertz</a>
+          <a href="association.html" class="hover:text-[#00E6C7] transition">Notre Association</a>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="min-h-screen bg-black flex items-center justify-center text-center px-6 py-12 md:py-20">
+  <section class="min-h-screen bg-gradient-to-br from-[#0A1F1C] via-[#004D40] to-[#1A3C35] flex items-center justify-center text-center px-6 py-12 md:py-20">
     <div class="max-w-4xl">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider">CARIBBEAN<br><span class="text-amber-400">SWISSNESS</span></h1>
-      <p class="text-xl md:text-2xl lg:text-3xl mb-8 text-amber-300">Glamour Night • Aéroport de Genève</p>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider">CARIBBEAN<br><span class="text-[#FFD700]">SWISSNESS</span></h1>
+      <p class="text-xl md:text-2xl lg:text-3xl mb-8 text-[#00E6C7]">Glamour Night • Aéroport de Genève</p>
       
-      <div id="countdown" class="flex justify-center gap-6 md:gap-8 mb-10 text-amber-400 text-4xl md:text-5xl"></div>
+      <div id="countdown" class="flex justify-center gap-6 md:gap-8 mb-10 text-[#FFD700] text-4xl md:text-5xl"></div>
       
-      <a href="#billetterie" class="inline-block bg-amber-400 hover:bg-amber-500 text-zinc-950 font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
+      <a href="#billetterie" class="inline-block bg-[#FF4D4D] hover:bg-[#FF6B6B] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
         JE RÉSERVE MA PLACE
       </a>
     </div>
   </section>
 
   <!-- DESCRIPTION -->
-  <section class="py-16 md:py-20 bg-zinc-900">
+  <section class="py-16 md:py-20 bg-[#0F2E2A]">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-amber-400">L'Événement</h2>
-      <p class="text-base md:text-lg leading-relaxed whitespace-pre-line">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[#00E6C7]">L'Événement</h2>
+      <p class="text-base md:text-lg leading-relaxed whitespace-pre-line text-gray-200">
 🌴✈️ Le 27 juin 2026, la plateforme de l’aéroport de Genève se transforme en un lieu tropical et magique… Rejoignez nous !
 
 📍 Restaurant Le Chef — 3ème étage — Genève
@@ -61,16 +58,14 @@
 👗 Dress code : WHITE & TROPICAL COLORS
 
 💫 Mindset : JOY • LOVE • GOOD VIBES
-
-🎫 Inclus : Cocktail de bienvenue • Entrée • Plat • Dessert • Parking
       </p>
     </div>
   </section>
 
   <!-- GALERIE -->
-  <section class="py-16 md:py-20 bg-black">
+  <section class="py-16 md:py-20 bg-[#0A1F1C]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-amber-400">Ambiance de la soirée</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#FFD700]">Ambiance de la soirée</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <img src="https://i.imgur.com/6dhKkMK.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ambiance 1">
         <img src="https://i.imgur.com/kfRmYy5.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ambiance 2">
@@ -79,26 +74,26 @@
   </section>
 
   <!-- TARIFS -->
-  <section id="billetterie" class="py-16 md:py-20 bg-zinc-900 text-center">
+  <section id="billetterie" class="py-16 md:py-20 bg-[#0F2E2A] text-center">
     <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-amber-400">Paiement en ligne</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[#00E6C7]">Paiement en ligne</h2>
       
       <a href="https://pay.sumup.com/b2c/Q3Q6R49M" target="_blank" class="block mb-8 group">
-        <div class="bg-zinc-800 hover:bg-amber-400 hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
           <p class="text-4xl md:text-5xl font-bold">89 CHF</p>
           <p class="text-lg md:text-xl">Groupe (dès 4 personnes)</p>
         </div>
       </a>
 
       <a href="https://pay.sumup.com/b2c/QGLDF5HS" target="_blank" class="block mb-8 group">
-        <div class="bg-zinc-800 hover:bg-amber-400 hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
           <p class="text-4xl md:text-5xl font-bold">99 CHF</p>
           <p class="text-lg md:text-xl">Tarif Couple</p>
         </div>
       </a>
 
       <a href="https://pay.sumup.com/b2c/Q7QQSWOA" target="_blank" class="block group">
-        <div class="bg-zinc-800 hover:bg-amber-400 hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
           <p class="text-4xl md:text-5xl font-bold">109 CHF</p>
           <p class="text-lg md:text-xl">Tarif Individuel</p>
         </div>
@@ -108,10 +103,10 @@
 
   <!-- INSTAGRAM -->
   <section class="py-16 md:py-20 bg-black text-center">
-    <h2 class="text-3xl font-bold mb-6 text-amber-400">Suivez l'événement</h2>
+    <h2 class="text-3xl font-bold mb-6 text-[#FFD700]">Suivez l'événement</h2>
     <a href="https://www.instagram.com/_caribbeanswissness/" target="_blank" 
-       class="inline-flex items-center gap-4 bg-zinc-800 hover:bg-zinc-700 px-8 py-6 rounded-2xl text-xl transition">
-      <i class="fab fa-instagram text-5xl text-pink-500"></i>
+       class="inline-flex items-center gap-4 bg-zinc-800 hover:bg-[#00E6C7] hover:text-black px-8 py-6 rounded-2xl text-xl transition">
+      <i class="fab fa-instagram text-5xl text-[#FF4D94]"></i>
       <div>
         <span class="block font-semibold">@_caribbeanswissness</span>
       </div>
@@ -119,9 +114,9 @@
   </section>
 
   <!-- NOS ANCIENS ÉVÉNEMENTS -->
-  <section class="py-16 md:py-20 bg-zinc-900">
+  <section class="py-16 md:py-20 bg-[#0F2E2A]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-amber-400">Nos Anciens Événements</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#FFD700]">Nos Anciens Événements</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <img src="https://i.imgur.com/wALNMSD.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 1">
         <img src="https://i.imgur.com/no48kWz.jpeg" class="rounded-3xl shadow-2xl w-full" alt="Ancien 2">
@@ -132,9 +127,9 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-zinc-950 py-12 text-center">
+  <footer class="bg-black py-12 text-center">
     <p class="text-xl">Caribbean Swissness 2026 ©</p>
-    <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
+    <p class="text-sm text-gray-500 mt-2">Restaurant Le Chef - Aéroport de Genève</p>
   </footer>
 
   <script>
@@ -146,9 +141,9 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       
       document.getElementById("countdown").innerHTML = `
-        <div>${days}<span class="text-xs md:text-sm font-normal block text-amber-300">JOURS</span></div>
-        <div>${hours}<span class="text-xs md:text-sm font-normal block text-amber-300">HEURES</span></div>
-        <div>${minutes}<span class="text-xs md:text-sm font-normal block text-amber-300">MIN</span></div>
+        <div>${days}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">JOURS</span></div>
+        <div>${hours}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">HEURES</span></div>
+        <div>${minutes}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">MIN</span></div>
       `;
     }
     setInterval(countdown, 60000);
