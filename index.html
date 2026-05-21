@@ -27,12 +27,13 @@
   <!-- HERO avec logo agrandi -->
   <section class="min-h-screen bg-gradient-to-br from-[#00332C] via-[#004D40] to-[#00261F] flex items-center justify-center text-center px-6 py-12 md:py-20">
     <div class="max-w-4xl">
-      <!-- Logo agrandi (double taille) -->
+      <!-- Logo agrandi -->
       <img src="https://i.imgur.com/FrvHdQO.jpeg" 
            alt="Caribbean Swissness" 
            class="mx-auto h-32 md:h-44 lg:h-52 mb-8">
 
-      <div id="countdown" class="flex justify-center gap-6 md:gap-8 mb-10 text-[#FFD700] text-4xl md:text-5xl"></div>
+      <!-- Compte à rebours avec secondes -->
+      <div id="countdown" class="flex justify-center gap-4 md:gap-8 mb-10 text-[#FFD700] text-4xl md:text-5xl font-bold"></div>
       
       <a href="#billetterie" class="inline-block bg-[#FF4D4D] hover:bg-[#FF6B6B] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
         JE RÉSERVE MA PLACE
@@ -101,6 +102,7 @@
     </div>
   </section>
 
+  <!-- INSTAGRAM + ANCIENS ÉVÉNEMENTS + FOOTER (identiques) -->
   <!-- INSTAGRAM -->
   <section class="py-16 md:py-20 bg-black text-center">
     <h2 class="text-3xl font-bold mb-6 text-[#FFD700]">Suivez l'événement</h2>
@@ -136,17 +138,20 @@
     function countdown() {
       const eventDate = new Date("2026-06-27T19:00:00").getTime();
       const distance = eventDate - Date.now();
+
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
       document.getElementById("countdown").innerHTML = `
         <div>${days}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">JOURS</span></div>
         <div>${hours}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">HEURES</span></div>
         <div>${minutes}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">MIN</span></div>
+        <div>${seconds}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">SEC</span></div>
       `;
     }
-    setInterval(countdown, 60000);
+    setInterval(countdown, 1000);
     countdown();
   </script>
 </body>
