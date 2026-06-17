@@ -16,7 +16,7 @@
         <img src="https://i.imgur.com/ZKmOdIZ.png" alt="Caribbean Swissness" class="h-14 md:h-16 hidden md:block">
         
         <div class="flex gap-x-5 md:gap-x-8 text-base md:text-lg font-medium">
-          <a href="index.html" class="hover:text-[#FFD700] transition">Accueil</a>
+          <a href="index.html" class="text-[#FFD700] hover:text-amber-300 transition">Accueil</a>
           <a href="formation.html" class="hover:text-[#FFD700] transition">Formation Terahertz</a>
           <a href="actualite.html" class="hover:text-[#FFD700] transition">Actualité</a>
           <a href="association.html" class="hover:text-[#FFD700] transition">Notre Association</a>
@@ -26,8 +26,73 @@
     </div>
   </nav>
 
-  <!-- HERO + FLYER + DESCRIPTION + TARIFS + GALERIE + INSTAGRAM + ANCIENS ÉVÉNEMENTS -->
-  <!-- (Je garde le même contenu que précédemment, je te donne seulement la fin avec la nouvelle section) -->
+  <!-- HERO -->
+  <section class="min-h-screen bg-gradient-to-br from-[#001F3F] via-[#002D5C] to-[#001233] flex items-center justify-center text-center px-6 py-12 md:py-20">
+    <div class="max-w-4xl">
+      <img src="https://i.imgur.com/ZKmOdIZ.png" alt="Caribbean Swissness" class="mx-auto h-32 md:h-44 lg:h-52 mb-8">
+      <div id="countdown" class="flex justify-center gap-6 md:gap-8 mb-10 text-[#FFD700] text-4xl md:text-5xl"></div>
+      <a href="#billetterie" class="inline-block bg-[#FF4D4D] hover:bg-[#FF6B6B] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
+        JE RÉSERVE MA PLACE
+      </a>
+    </div>
+  </section>
+
+  <!-- FLYER -->
+  <section class="py-12 bg-[#002D5C]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <img src="https://i.imgur.com/0NLF0Mb.jpeg" class="mx-auto rounded-3xl shadow-2xl w-full max-w-2xl" alt="Flyer">
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="py-16 md:py-20 bg-[#002D5C]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[#00E6C7]">L'Événement</h2>
+      <p class="text-base md:text-lg leading-relaxed whitespace-pre-line text-gray-100">
+🌴✈️ Le 27 juin 2026, la plateforme de l’aéroport de Genève se transforme en un lieu tropical et magique… Rejoignez nous !
+
+📍 Restaurant Le Chef — 3ème étage — Genève
+
+🎶 Caribbean Vibes • Cocktails • Buffet • Ambiance des îles • DJ • Magicienne
+
+🔥 Zouk • Afrobeat • Kompa • Salsa • Shatta
+
+👗 Dress code : WHITE & TROPICAL COLORS
+
+💫 Mindset : JOY • LOVE • GOOD VIBES
+
+🎫 Inclus : Cocktail de bienvenue • Entrée • Plat • Dessert • Parking
+      </p>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="billetterie" class="py-16 md:py-20 bg-[#002D5C] text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[#00E6C7]">Paiement en ligne</h2>
+      
+      <a href="https://pay.sumup.com/b2c/Q3Q6R49M" target="_blank" class="block mb-8 group">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+          <p class="text-4xl md:text-5xl font-bold">89 CHF / pers</p>
+          <p class="text-lg md:text-xl">Groupe (dès 4 personnes)</p>
+        </div>
+      </a>
+
+      <a href="https://pay.sumup.com/b2c/QGLDF5HS" target="_blank" class="block mb-8 group">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+          <p class="text-4xl md:text-5xl font-bold">99 CHF / pers</p>
+          <p class="text-lg md:text-xl">Tarif Couple</p>
+        </div>
+      </a>
+
+      <a href="https://pay.sumup.com/b2c/Q7QQSWOA" target="_blank" class="block group">
+        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
+          <p class="text-4xl md:text-5xl font-bold">109 CHF / pers</p>
+          <p class="text-lg md:text-xl">Tarif Individuel</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
   <!-- SECTION NOUS CONTACTER -->
   <section id="contact" class="py-20 bg-[#002D5C]">
@@ -51,8 +116,7 @@
 
         <div class="bg-black/40 rounded-3xl p-8 flex flex-col justify-center">
           <h3 class="text-2xl font-semibold mb-6 text-[#FFD700]">✉️ Par email</h3>
-          <a href="mailto:caribbeanswissness@gmail.com" 
-             class="text-2xl hover:text-[#00E6C7] transition break-all">
+          <a href="mailto:caribbeanswissness@gmail.com" class="text-2xl hover:text-[#00E6C7] transition">
             caribbeanswissness@gmail.com
           </a>
         </div>
@@ -64,15 +128,12 @@
   <footer class="bg-black py-12 text-center">
     <p class="text-xl">Caribbean Swissness 2026 ©</p>
     <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
-    
-    <!-- Visible uniquement sur mobile -->
     <a href="#contact" class="md:hidden inline-block mt-6 text-[#00E6C7] hover:text-[#FFD700] text-lg font-medium">
       📞 Nous Contacter
     </a>
   </footer>
 
   <script>
-    // Countdown script (identique à avant)
     function countdown() {
       const eventDate = new Date("2026-06-27T19:00:00").getTime();
       const distance = eventDate - Date.now();
