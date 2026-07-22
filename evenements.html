@@ -3,127 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caribbean Swissness - Événements</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .event-card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .event-card:hover {
-      transform: translateY(-10px);
-    }
-    .event-card img {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-    }
-    .event-date {
-      background: var(--turquoise);
-      color: white;
-      padding: 8px 15px;
-      display: inline-block;
-      border-radius: 30px;
-      font-size: 0.95rem;
-      margin-bottom: 15px;
-    }
-  </style>
+  <title>Caribbean Swissness • Nos Événements</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-[#001F3F] text-white">
 
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <img src="logo.png" alt="Logo Caribbean Swissness" class="logo">
-      
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="formation.html">Formation</a>
-        <a href="actualite.html">Actualités</a>
-        <a href="association.html">Association</a>
-        <a href="evenements.html" class="active">Événements</a>
-        <a href="#contact" class="btn-contact">Nous Contacter</a>
+  <!-- Navigation -->
+  <nav class="bg-black/95 sticky top-0 z-50 border-b border-[#00BFFF]/30">
+    <div class="max-w-6xl mx-auto px-6 py-5">
+      <div class="flex justify-between items-center">
+        <img src="https://i.imgur.com/ZKmOdIZ.png" alt="Caribbean Swissness" class="h-14 md:h-16 hidden md:block">
+        
+        <div class="flex gap-x-5 md:gap-x-8 text-base md:text-lg font-medium">
+          <a href="index.html" class="hover:text-[#FFD700] transition">Accueil</a>
+          <a href="formation.html" class="hover:text-[#FFD700] transition">Formation Terahertz</a>
+          <a href="actualite.html" class="hover:text-[#FFD700] transition">Actualité</a>
+          <a href="evenements.html" class="text-[#FFD700]">Événements</a>
+          <a href="association.html" class="hover:text-[#FFD700] transition">Notre Association</a>
+          <a href="#contact" class="hidden md:block hover:text-[#FFD700] transition">Nous Contacter</a>
+        </div>
       </div>
-      
-      <div class="hamburger">☰</div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- HERO ÉVÉNEMENTS -->
-  <section style="background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('evenements-hero.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 140px 20px;">
-    <h1 style="font-size: 3.5rem; margin-bottom: 15px;">Nos Événements</h1>
-    <p style="font-size: 1.4rem; max-width: 700px; margin: 0 auto;">
-      Découvrez tous les moments forts de Caribbean Swissness
-    </p>
+  <section class="min-h-[70vh] bg-gradient-to-br from-[#001F3F] via-[#002D5C] to-[#001233] flex items-center justify-center text-center px-6">
+    <div class="max-w-4xl">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-[#FFD700]">Nos Événements</h1>
+      <p class="text-xl md:text-2xl text-gray-300">
+        Découvrez tous les moments forts de Caribbean Swissness
+      </p>
+    </div>
   </section>
 
-  <!-- LISTE DES ÉVÉNEMENTS -->
-  <section style="padding: 80px 20px; max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; margin-bottom: 60px; color: var(--bleu-marine);">Nos Anciens Événements</h2>
+  <!-- ANCIENS ÉVÉNEMENTS -->
+  <section class="py-16 md:py-20 bg-[#002D5C]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#00E6C7]">Nos Anciens Événements</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Événement Aéroport (Femme en robe rouge) -->
+        <div class="bg-black/40 rounded-3xl overflow-hidden group">
+          <img src="https://i.imgur.com/0NLF0Mb.jpeg" class="w-full h-80 object-cover transition group-hover:scale-105" alt="Soirée Aéroport">
+          <div class="p-8">
+            <span class="text-[#FFD700] text-sm">27 Juin 2026 • Genève</span>
+            <h3 class="text-2xl font-bold mt-3 mb-4">Soirée d’Inauguration - Aéroport de Genève</h3>
+            <p class="text-gray-300">Grande soirée de lancement avec ambiance tropicale, cocktails et musique caribéenne au Restaurant Le Chef.</p>
+          </div>
+        </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 35px;">
+        <!-- Autres événements (à compléter) -->
+        <div class="bg-black/40 rounded-3xl overflow-hidden group">
+          <img src="https://i.imgur.com/wALNMSD.jpeg" class="w-full h-80 object-cover transition group-hover:scale-105" alt="Événement 2">
+          <div class="p-8">
+            <span class="text-[#FFD700] text-sm">Mai 2026</span>
+            <h3 class="text-2xl font-bold mt-3 mb-4">Nom de l'événement 2</h3>
+            <p class="text-gray-300">Courte description de l'événement.</p>
+          </div>
+        </div>
 
-      <!-- Événement 1 -->
-      <div class="event-card">
-        <img src="evenements/aeroport-femme-rouge.jpg" alt="Soirée à l'aéroport">
-        <div style="padding: 25px;">
-          <span class="event-date">Juin 2026</span>
-          <h3>Soirée d’inauguration à l’Aéroport</h3>
-          <p style="margin: 15px 0; color: #555;">
-            Lancement officiel de l’association Caribbean Swissness avec une magnifique soirée caribéenne à l’aéroport.
-          </p>
-          <p><strong>Lieu :</strong> Aéroport International</p>
+        <div class="bg-black/40 rounded-3xl overflow-hidden group">
+          <img src="https://i.imgur.com/ge6KIOO.jpeg" class="w-full h-80 object-cover transition group-hover:scale-105" alt="Événement 3">
+          <div class="p-8">
+            <span class="text-[#FFD700] text-sm">Avril 2026</span>
+            <h3 class="text-2xl font-bold mt-3 mb-4">Nom de l'événement 3</h3>
+            <p class="text-gray-300">Courte description de l'événement.</p>
+          </div>
+        </div>
+
+        <div class="bg-black/40 rounded-3xl overflow-hidden group">
+          <img src="https://i.imgur.com/no48kWz.jpeg" class="w-full h-80 object-cover transition group-hover:scale-105" alt="Événement 4">
+          <div class="p-8">
+            <span class="text-[#FFD700] text-sm">Mars 2026</span>
+            <h3 class="text-2xl font-bold mt-3 mb-4">Nom de l'événement 4</h3>
+            <p class="text-gray-300">Courte description de l'événement.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-[#002D5C]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10 text-[#00E6C7]">Nous Contacter</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-black/40 rounded-3xl p-8">
+          <h3 class="text-2xl font-semibold mb-6 text-[#FFD700]">📞 Par téléphone</h3>
+          <div class="space-y-6 text-left">
+            <div>
+              <span class="text-2xl">🇨🇭</span>
+              <a href="tel:+41762985870" class="ml-4 text-2xl hover:text-[#00E6C7]">+41 76 298 58 70</a>
+            </div>
+            <div>
+              <span class="text-2xl">🇫🇷</span>
+              <a href="tel:+33745991228" class="ml-4 text-2xl hover:text-[#00E6C7]">+33 7 45 99 12 28</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black/40 rounded-3xl p-8 flex flex-col justify-center">
+          <h3 class="text-2xl font-semibold mb-6 text-[#FFD700]">✉️ Par email</h3>
+          <a href="mailto:caribbeanswissness@gmail.com" class="text-2xl hover:text-[#00E6C7]">
+            caribbeanswissness@gmail.com
+          </a>
         </div>
       </div>
-
-      <!-- Ajoute d'autres événements ici en copiant le bloc ci-dessus -->
-
-      <div class="event-card">
-        <img src="evenements/evenement2.jpg" alt="Événement 2">
-        <div style="padding: 25px;">
-          <span class="event-date">Mai 2026</span>
-          <h3>Atelier Culture &amp; Cuisine</h3>
-          <p style="margin: 15px 0; color: #555;">
-            Découverte des saveurs caribéennes et de la précision suisse à travers un atelier interactif.
-          </p>
-          <p><strong>Lieu :</strong> Genève</p>
-        </div>
-      </div>
-
-      <div class="event-card">
-        <img src="evenements/evenement3.jpg" alt="Événement 3">
-        <div style="padding: 25px;">
-          <span class="event-date">Avril 2026</span>
-          <h3>Conférence Swiss-Caribbean Business</h3>
-          <p style="margin: 15px 0; color: #555;">
-            Rencontre entre entrepreneurs suisses et caribéens autour des opportunités économiques.
-          </p>
-          <p><strong>Lieu :</strong> Zurich</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact" style="background: var(--bleu-marine); color: white; text-align: center; padding: 60px 20px;">
-    <h2 style="margin-bottom: 20px;">Nous Contacter</h2>
-    <p style="margin: 10px 0;">📞 Téléphone : +41 XX XXX XX XX | +XXX XX XXX XXXX</p>
-    <p style="margin: 10px 0;">✉️ Email : contact@caribbeanswissness.ch</p>
-    <p style="margin-top: 40px; opacity: 0.8;">&copy; 2026 Caribbean Swissness - Tous droits réservés</p>
+  <footer class="bg-black py-12 text-center">
+    <p class="text-xl">Caribbean Swissness 2026 ©</p>
+    <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
   </footer>
 
-  <script>
-    // Menu mobile
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
