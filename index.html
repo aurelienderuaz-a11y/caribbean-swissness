@@ -31,9 +31,14 @@
   <section class="min-h-screen bg-gradient-to-br from-[#001F3F] via-[#002D5C] to-[#001233] flex items-center justify-center text-center px-6 py-12 md:py-20">
     <div class="max-w-4xl">
       <img src="image/logo caribbean swissness cropped.jpeg" alt="Caribbean Swissness" class="mx-auto h-32 md:h-44 lg:h-52 mb-8">
-      <div id="countdown" class="flex justify-center gap-6 md:gap-8 mb-10 text-[#FFD700] text-4xl md:text-5xl"></div>
-      <a href="#billetterie" class="inline-block bg-[#FF4D4D] hover:bg-[#FF6B6B] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
-        JE RÉSERVE MA PLACE
+      
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-[#FFD700]">Caribbean Swissness</h1>
+      <p class="text-2xl md:text-3xl text-gray-300 mb-10">
+        L'alliance festive entre la Suisse et les Caraïbes
+      </p>
+      
+      <a href="evenements.html" class="inline-block bg-[#FF4D4D] hover:bg-[#FF6B6B] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all">
+        DÉCOUVRIR NOS ÉVÉNEMENTS
       </a>
     </div>
   </section>
@@ -50,7 +55,7 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[#00E6C7]">L'Événement</h2>
       <p class="text-base md:text-lg leading-relaxed whitespace-pre-line text-gray-100">
-🌴✈️ Le 27 juin 2026, la plateforme de l’aéroport de Genève se transforme en un lieu tropical et magique… Rejoignez nous !
+🌴✈️ Le 27 juin 2026, la plateforme de l’aéroport de Genève s’est transformée en un lieu tropical et magique…
 
 📍 Restaurant Le Chef — 3ème étage — Genève
 
@@ -67,30 +72,13 @@
     </div>
   </section>
 
-  <!-- TARIFS -->
+  <!-- TARIFS (tu peux garder ou supprimer selon tes besoins) -->
   <section id="billetterie" class="py-16 md:py-20 bg-[#002D5C] text-center">
     <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[#00E6C7]">Paiement en ligne</h2>
-      
-      <a href="https://pay.sumup.com/b2c/Q3Q6R49M" target="_blank" class="block mb-8 group">
-        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
-          <p class="text-4xl md:text-5xl font-bold">89 CHF / pers</p>
-          <p class="text-lg md:text-xl">Groupe (dès 4 personnes)</p>
-        </div>
-      </a>
-
-      <a href="https://pay.sumup.com/b2c/QGLDF5HS" target="_blank" class="block mb-8 group">
-        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
-          <p class="text-4xl md:text-5xl font-bold">99 CHF / pers</p>
-          <p class="text-lg md:text-xl">Tarif Couple</p>
-        </div>
-      </a>
-
-      <a href="https://pay.sumup.com/b2c/Q7QQSWOA" target="_blank" class="block group">
-        <div class="bg-zinc-800 hover:bg-[#00E6C7] hover:text-zinc-950 transition-all rounded-3xl p-6 md:p-8">
-          <p class="text-4xl md:text-5xl font-bold">109 CHF / pers</p>
-          <p class="text-lg md:text-xl">Tarif Individuel</p>
-        </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[#00E6C7]">Prochains Événements</h2>
+      <p class="text-xl text-gray-300 mb-8">Consultez notre page Événements pour découvrir les prochaines dates</p>
+      <a href="evenements.html" class="inline-block bg-[#FFD700] hover:bg-amber-300 text-black font-bold text-lg px-10 py-5 rounded-full transition-all">
+        VOIR TOUS LES ÉVÉNEMENTS
       </a>
     </div>
   </section>
@@ -163,29 +151,7 @@
   <footer class="bg-black py-12 text-center">
     <p class="text-xl">Caribbean Swissness 2026 ©</p>
     <p class="text-sm text-gray-500">Restaurant Le Chef - Aéroport de Genève</p>
-    <a href="#contact" class="md:hidden inline-block mt-6 text-[#00E6C7] hover:text-[#FFD700] text-lg font-medium">
-      📞 Nous Contacter
-    </a>
   </footer>
 
-  <script>
-    function countdown() {
-      const eventDate = new Date("2026-06-27T19:00:00").getTime();
-      const distance = eventDate - Date.now();
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById("countdown").innerHTML = `
-        <div>${days}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">JOURS</span></div>
-        <div>${hours}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">HEURES</span></div>
-        <div>${minutes}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">MIN</span></div>
-        <div>${seconds}<span class="text-xs md:text-sm font-normal block text-[#00E6C7]">SEC</span></div>
-      `;
-    }
-    setInterval(countdown, 1000);
-    countdown();
-  </script>
 </body>
 </html>
